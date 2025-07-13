@@ -1,0 +1,51 @@
+# Source files
+src/
+*.ts
+!dist/**/*.d.ts
+
+# Development files
+.git/
+.github/
+.vscode/
+
+# Config files
+tsconfig.json
+vitest.config.ts
+eslint.config.mjs
+xmcp.config.ts
+.gitignore
+.prettierrc
+.prettierignore
+.husky/
+.lintstagedrc.json
+
+# Dependencies
+node_modules/
+pnpm-lock.yaml
+package-lock.json
+yarn.lock
+
+# Build artifacts
+*.tsbuildinfo
+.cache/
+
+# Testing
+coverage/
+.nyc_output/
+
+# Environment
+.env
+.env.*
+
+# Logs
+*.log
+logs/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+.tmp/ 

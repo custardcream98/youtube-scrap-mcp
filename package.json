@@ -1,12 +1,29 @@
 {
   "name": "youtube-scrap-mcp",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "MCP server for extracting YouTube video content with transcript processing.",
-  "author": "shiwoo.park",
+  "keywords": [
+    "mcp",
+    "youtube",
+    "transcript",
+    "video",
+    "content-extraction",
+    "model-context-protocol",
+    "whisper",
+    "subtitles"
+  ],
+  "author": {
+    "name": "shiwoo.park",
+    "url": "https://github.com/custardcream98"
+  },
   "license": "MIT",
+  "homepage": "https://github.com/custardcream98/youtube-scrap-mcp#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/custardcream98/youtube-scrap-mcp.git"
+    "url": "git+https://github.com/custardcream98/youtube-scrap-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/custardcream98/youtube-scrap-mcp/issues"
   },
   "engines": {
     "node": ">=20.0.0"
@@ -22,7 +39,9 @@
     "test:watch": "vitest watch",
     "test:ui": "vitest --ui",
     "test:coverage": "vitest run --coverage",
-    "prepare": "husky"
+    "prepare": "husky",
+    "prepublishOnly": "pnpm run build && pnpm test",
+    "prepack": "pnpm run build"
   },
   "dependencies": {
     "xmcp": "latest",
@@ -42,9 +61,15 @@
   },
   "main": "./dist/stdio.js",
   "files": [
-    "dist"
+    "dist",
+    "README.md",
+    "README.ko.md",
+    "LICENSE"
   ],
   "bin": {
     "youtube-scrap-mcp": "./dist/stdio.js"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
