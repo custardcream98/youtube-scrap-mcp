@@ -1,8 +1,6 @@
 # YouTube Content Extractor MCP
 
-## Overview
-
-This MCP (Model Context Protocol) server provides intelligent YouTube content extraction with advanced language detection and transcript processing capabilities.
+MCP (Model Context Protocol) server provides intelligent YouTube content extraction with advanced language detection and transcript processing capabilities.
 
 - Video title and description
 - Transcript (from subtitles or Whisper speech-to-text)

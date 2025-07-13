@@ -1,7 +1,13 @@
 {
   "name": "youtube-scrap-mcp",
   "version": "0.0.1",
-  "description": "An XMCP application with tool syntax",
+  "description": "MCP (Model Context Protocol) server provides intelligent YouTube content extraction with advanced language detection and transcript processing capabilities.",
+  "author": "shiwoo.park",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/custardcream98/youtube-scrap-mcp.git"
+  },
   "engines": {
     "node": ">=20.0.0"
   },
