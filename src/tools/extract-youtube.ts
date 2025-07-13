@@ -217,14 +217,7 @@ export default async function extractYoutube({
 
       formattedOutput += `   ${'-'.repeat(40)}\n`
 
-      // Truncate very long transcripts for readability
-      const maxTranscriptLength = 3000
-      const transcript =
-        result.transcript.length > maxTranscriptLength
-          ? `${result.transcript.substring(0, maxTranscriptLength)}\n\n   [Transcript truncated for display...]`
-          : result.transcript
-
-      formattedOutput += `   ${transcript.replace(/\n/g, '\n   ')}\n\n`
+      formattedOutput += `   ${result.transcript.replace(/\n/g, '\n   ')}\n\n`
     }
 
     // Footer
