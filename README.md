@@ -1,6 +1,8 @@
 # YouTube Content Extractor MCP
 
-MCP (Model Context Protocol) server provides intelligent YouTube content extraction with advanced language detection and transcript processing capabilities.
+[한국어 문서](README.ko.md)
+
+MCP server for extracting YouTube video content with transcript processing.
 
 - Video title and description
 - Transcript (from subtitles or Whisper speech-to-text)
@@ -45,19 +47,6 @@ whisper --help
 npm install -g youtube-scrap-mcp
 ```
 
-### Option 2: From Source
-
-```bash
-git clone https://github.com/your-username/youtube-scrap-mcp.git
-cd youtube-scrap-mcp
-pnpm install
-pnpm build
-```
-
-## Claude Desktop Configuration
-
-Add this configuration to your Claude Desktop settings:
-
 ```json
 {
   "mcpServers": {
@@ -69,7 +58,14 @@ Add this configuration to your Claude Desktop settings:
 }
 ```
 
-For local development:
+### Option 2: From Source
+
+```bash
+git clone https://github.com/your-username/youtube-scrap-mcp.git
+cd youtube-scrap-mcp
+pnpm install
+pnpm build
+```
 
 ```json
 {
